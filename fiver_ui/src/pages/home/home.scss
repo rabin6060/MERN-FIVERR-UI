@@ -1,0 +1,142 @@
+.home{
+    .trustedBy{
+        height: 90px;
+        background: #fafafa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        span{
+            color: lightgray;
+        }
+    }
+    .features{
+        
+        background-color: #f1fdf7;
+        display: flex;
+        justify-content: center;
+        .container{
+            width: 1400px;
+            padding: 50px;
+            display: flex;
+            gap: 150px;
+            .left{
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                flex: 2;
+                h2{
+                    font-size: 35px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                .texts{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 15px 0;
+                    .text-up{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        margin-bottom: 10px;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                            color: black;
+                        }
+                        span{
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                    }
+                    p{
+                        color: gray;
+                        letter-spacing: 1px;
+                        line-height: 25px;
+                    }
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 3;
+                video{
+                    width: 720px;
+                    
+                }
+            }
+        }
+        &.dark{
+            background: #0d084d;
+            color: white;
+            .left{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                .top{
+                    font-size: 50px;
+                    .dot{
+                        color: #1dbf73;
+                    }
+                    span{
+                        &:first-child{
+                            font-size: 35px;
+                            font-weight: 500;
+                        }
+                        
+                        &:last-child{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                h1{
+                    letter-spacing: 1px;
+                }
+                .details{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .detail{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                        .text{
+                            font-size: 18px;
+                            span{
+                                font-weight: 500;
+                            }
+                            p{
+                                color: rgb(202, 197, 197);
+                            }
+                        }
+                    }
+                }
+                button{
+                    width: 150px;
+                    padding: 10px 15px;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    color: rgb(68, 66, 66);
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+            .right{
+                flex: 2;
+                img{
+                    width: 600px;
+                }
+            }
+        }
+    }
+    
+}

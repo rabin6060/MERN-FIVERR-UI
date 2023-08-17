@@ -1,0 +1,44 @@
+.add{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 1400px;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        h2{
+            color: gray;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        .sections{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            .left,.right{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 20px;
+                label{
+                    color: gray;
+                    font-size: 18px;
+                }
+                input,select,textarea{
+                    padding: 20px;
+                }
+                button{
+                    border: none;
+                    border-radius: 5px;
+                    padding: 20px;
+                    background: #1dbf73;
+                    cursor: pointer;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
